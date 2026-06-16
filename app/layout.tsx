@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: business.nombre,
-  description: `Panel de administración de ${business.nombre}`,
+  description: business.slogan ?? `Panel de administración de ${business.nombre}`,
 };
 
 export default function RootLayout({
@@ -24,18 +24,22 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const { primario, secundario, acento, fondo, texto } = business.colores;
   return (
     <html
       lang="es"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       style={
         {
-          "--color-primary": business.colores.primario,
-          "--color-secondary": business.colores.secundario,
+          "--color-primary": primario,
+          "--color-secondary": secundario,
+          ...(acento && { "--color-acento": acento }),
+          ...(fondo && { "--color-fondo": fondo }),
+          ...(texto && { "--color-texto": texto }),
         } as React.CSSProperties
       }
     >
-      <body className="flex min-h-full min-h-screen flex-col md:flex-row bg-[var(--color-secondary)]">
+      <body className="flex min-h-screen flex-col md:flex-row">
         <Sidebar />
         <main className="flex-1 p-4 md:p-8">{children}</main>
       </body>

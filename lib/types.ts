@@ -1,12 +1,17 @@
 export type BusinessConfig = {
   nombre: string;
   giro: string;
+  slogan?: string;
   colores: {
     primario: string;
     secundario: string;
+    acento?: string;
+    fondo?: string;
+    texto?: string;
   };
   modulos: string[];
   vocabulario: Record<string, string>;
+  servicios?: string[];
 };
 
 export type Clienta = {

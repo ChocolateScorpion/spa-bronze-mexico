@@ -2,98 +2,98 @@
   "clientas": [
     {
       "id": "cl1",
-      "nombre": "Ana Gómez",
+      "nombre": "Gabriela Mendoza",
       "telefono": "55 1234 5678",
-      "email": "ana.gomez@example.com",
-      "ultimaVisita": "2026-06-10",
-      "tratamientoFrecuente": "Masaje relajante"
+      "email": "gabriela.mendoza@example.com",
+      "ultimaVisita": "2026-06-13",
+      "tratamientoFrecuente": "Bronceado Brasileño"
     },
     {
       "id": "cl2",
-      "nombre": "Laura Fernández",
+      "nombre": "Isabella Reyes",
       "telefono": "55 2345 6789",
-      "email": "laura.fernandez@example.com",
-      "ultimaVisita": "2026-06-02",
-      "tratamientoFrecuente": "Limpieza facial profunda"
+      "email": "isabella.reyes@example.com",
+      "ultimaVisita": "2026-06-10",
+      "tratamientoFrecuente": "Bronceado Corporal"
     },
     {
       "id": "cl3",
-      "nombre": "Carmen Ruiz",
+      "nombre": "Fernanda Ortiz",
       "telefono": "55 3456 7890",
-      "email": "carmen.ruiz@example.com",
-      "ultimaVisita": "2026-06-13",
-      "tratamientoFrecuente": "Aromaterapia"
+      "email": "fernanda.ortiz@example.com",
+      "ultimaVisita": "2026-06-14",
+      "tratamientoFrecuente": "Paquete 3 sesiones"
     },
     {
       "id": "cl4",
-      "nombre": "Patricia Morales",
+      "nombre": "Camila Herrera",
       "telefono": "55 4567 8901",
-      "email": "patricia.morales@example.com",
-      "ultimaVisita": "2026-05-26",
-      "tratamientoFrecuente": "Masaje con piedras calientes"
+      "email": "camila.herrera@example.com",
+      "ultimaVisita": "2026-05-28",
+      "tratamientoFrecuente": "Tratamiento Facial"
     },
     {
       "id": "cl5",
-      "nombre": "Valeria Castro",
+      "nombre": "Valentina Cruz",
       "telefono": "55 5678 9012",
-      "email": "valeria.castro@example.com",
-      "ultimaVisita": "2026-06-14",
-      "tratamientoFrecuente": "Manicure spa"
+      "email": "valentina.cruz@example.com",
+      "ultimaVisita": "2026-06-12",
+      "tratamientoFrecuente": "Bikini en Cinta Adhesiva"
     }
   ],
   "citasHoy": [
     {
       "id": "ci1",
       "hora": "09:00",
-      "clienta": "Ana Gómez",
-      "tratamiento": "Masaje relajante",
-      "terapeuta": "Mariana López",
-      "duracionMin": 60,
+      "clienta": "Gabriela Mendoza",
+      "tratamiento": "Bronceado Brasileño",
+      "terapeuta": "Andrea Solís",
+      "duracionMin": 50,
       "estado": "confirmada"
     },
     {
       "id": "ci2",
-      "hora": "10:30",
-      "clienta": "Laura Fernández",
-      "tratamiento": "Limpieza facial profunda",
-      "terapeuta": "Daniela Torres",
-      "duracionMin": 45,
+      "hora": "10:00",
+      "clienta": "Isabella Reyes",
+      "tratamiento": "Bronceado Corporal",
+      "terapeuta": "Natalia Vega",
+      "duracionMin": 40,
       "estado": "confirmada"
     },
     {
       "id": "ci3",
       "hora": "11:30",
-      "clienta": "Carmen Ruiz",
-      "tratamiento": "Aromaterapia",
-      "terapeuta": "Sofía Ramírez",
-      "duracionMin": 50,
-      "estado": "pendiente"
+      "clienta": "Fernanda Ortiz",
+      "tratamiento": "Tratamiento Facial",
+      "terapeuta": "Andrea Solís",
+      "duracionMin": 45,
+      "estado": "confirmada"
     },
     {
       "id": "ci4",
       "hora": "13:00",
-      "clienta": "Valeria Castro",
-      "tratamiento": "Manicure spa",
-      "terapeuta": "Daniela Torres",
-      "duracionMin": 40,
-      "estado": "confirmada"
+      "clienta": "Camila Herrera",
+      "tratamiento": "Bikini en Cinta Adhesiva",
+      "terapeuta": "Mariana Ríos",
+      "duracionMin": 30,
+      "estado": "pendiente"
     },
     {
       "id": "ci5",
-      "hora": "16:00",
-      "clienta": "Patricia Morales",
-      "tratamiento": "Masaje con piedras calientes",
-      "terapeuta": "Mariana López",
-      "duracionMin": 75,
+      "hora": "15:00",
+      "clienta": "Valentina Cruz",
+      "tratamiento": "Paquete 3 sesiones",
+      "terapeuta": "Natalia Vega",
+      "duracionMin": 50,
       "estado": "confirmada"
     },
     {
       "id": "ci6",
-      "hora": "17:30",
-      "clienta": "Renata Aguilar",
-      "tratamiento": "Facial hidratante",
-      "terapeuta": "Sofía Ramírez",
-      "duracionMin": 45,
+      "hora": "17:00",
+      "clienta": "Sofía Paredes",
+      "tratamiento": "Bronceado Brasileño",
+      "terapeuta": "Mariana Ríos",
+      "duracionMin": 50,
       "estado": "pendiente"
     }
   ],
@@ -101,128 +101,128 @@
     {
       "id": "co1",
       "fecha": "2026-06-02",
-      "clienta": "Laura Fernández",
-      "tratamiento": "Limpieza facial profunda",
-      "monto": 850,
+      "clienta": "Gabriela Mendoza",
+      "tratamiento": "Paquete 6 sesiones",
+      "monto": 1800,
       "metodoPago": "tarjeta",
-      "terapeuta": "Daniela Torres"
+      "terapeuta": "Andrea Solís"
     },
     {
       "id": "co2",
       "fecha": "2026-06-03",
-      "clienta": "Carmen Ruiz",
-      "tratamiento": "Aromaterapia",
+      "clienta": "Isabella Reyes",
+      "tratamiento": "Bronceado Corporal",
       "monto": 650,
       "metodoPago": "efectivo",
-      "terapeuta": "Sofía Ramírez"
+      "terapeuta": "Natalia Vega"
     },
     {
       "id": "co3",
       "fecha": "2026-06-05",
-      "clienta": "Ana Gómez",
-      "tratamiento": "Masaje relajante",
-      "monto": 750,
+      "clienta": "Fernanda Ortiz",
+      "tratamiento": "Paquete 3 sesiones",
+      "monto": 1100,
       "metodoPago": "transferencia",
-      "terapeuta": "Mariana López"
+      "terapeuta": "Mariana Ríos"
     },
     {
       "id": "co4",
       "fecha": "2026-06-06",
-      "clienta": "Valeria Castro",
-      "tratamiento": "Manicure spa",
-      "monto": 450,
+      "clienta": "Valentina Cruz",
+      "tratamiento": "Bikini en Cinta Adhesiva",
+      "monto": 480,
       "metodoPago": "efectivo",
-      "terapeuta": "Daniela Torres"
+      "terapeuta": "Andrea Solís"
     },
     {
       "id": "co5",
       "fecha": "2026-06-09",
-      "clienta": "Patricia Morales",
-      "tratamiento": "Masaje con piedras calientes",
-      "monto": 980,
+      "clienta": "Camila Herrera",
+      "tratamiento": "Tratamiento Facial",
+      "monto": 750,
       "metodoPago": "tarjeta",
-      "terapeuta": "Mariana López"
+      "terapeuta": "Natalia Vega"
     },
     {
       "id": "co6",
       "fecha": "2026-06-10",
-      "clienta": "Ana Gómez",
-      "tratamiento": "Masaje relajante",
+      "clienta": "Isabella Reyes",
+      "tratamiento": "Bronceado Brasileño",
       "monto": 750,
       "metodoPago": "efectivo",
-      "terapeuta": "Mariana López"
+      "terapeuta": "Natalia Vega"
     },
     {
       "id": "co7",
       "fecha": "2026-06-12",
-      "clienta": "Renata Aguilar",
-      "tratamiento": "Facial hidratante",
-      "monto": 700,
-      "metodoPago": "transferencia",
-      "terapeuta": "Sofía Ramírez"
+      "clienta": "Valentina Cruz",
+      "tratamiento": "Bronceado Brasileño",
+      "monto": 750,
+      "metodoPago": "tarjeta",
+      "terapeuta": "Mariana Ríos"
     },
     {
       "id": "co8",
       "fecha": "2026-06-13",
-      "clienta": "Carmen Ruiz",
-      "tratamiento": "Aromaterapia + Manicure",
-      "monto": 1100,
-      "metodoPago": "tarjeta",
-      "terapeuta": "Sofía Ramírez"
+      "clienta": "Gabriela Mendoza",
+      "tratamiento": "Bronceado Brasileño",
+      "monto": 750,
+      "metodoPago": "transferencia",
+      "terapeuta": "Andrea Solís"
     }
   ],
   "terapeutas": [
     {
       "id": "te1",
-      "nombre": "Mariana López",
-      "especialidad": "Masaje terapéutico y relajante"
+      "nombre": "Andrea Solís",
+      "especialidad": "Bronceado brasileño y facial"
     },
     {
       "id": "te2",
-      "nombre": "Daniela Torres",
-      "especialidad": "Faciales y tratamientos de piel"
+      "nombre": "Natalia Vega",
+      "especialidad": "Bronceado corporal y paquetes"
     },
     {
       "id": "te3",
-      "nombre": "Sofía Ramírez",
-      "especialidad": "Aromaterapia y reflexología"
+      "nombre": "Mariana Ríos",
+      "especialidad": "Bikini y sesiones express"
     }
   ],
   "productos": [
     {
       "id": "pr1",
-      "nombre": "Aceite esencial de lavanda",
-      "categoria": "Aromaterapia",
-      "precio": 280,
-      "stock": 15
+      "nombre": "Fórmula Brasileña Pro",
+      "categoria": "Bronceado",
+      "precio": 580,
+      "stock": 12
     },
     {
       "id": "pr2",
-      "nombre": "Crema hidratante facial",
-      "categoria": "Faciales",
-      "precio": 320,
-      "stock": 22
-    },
-    {
-      "id": "pr3",
-      "nombre": "Sales de baño relajantes",
-      "categoria": "Relajación",
-      "precio": 180,
-      "stock": 30
-    },
-    {
-      "id": "pr4",
-      "nombre": "Vela aromática de soya",
-      "categoria": "Aromaterapia",
-      "precio": 220,
+      "nombre": "Fórmula Corporal Gold",
+      "categoria": "Bronceado",
+      "precio": 520,
       "stock": 18
     },
     {
+      "id": "pr3",
+      "nombre": "Sérum Hidratante Post-Bronceado",
+      "categoria": "Cuidado post-sesión",
+      "precio": 380,
+      "stock": 25
+    },
+    {
+      "id": "pr4",
+      "nombre": "Exfoliante Preparador de Piel",
+      "categoria": "Preparación",
+      "precio": 290,
+      "stock": 20
+    },
+    {
       "id": "pr5",
-      "nombre": "Set de piedras calientes",
-      "categoria": "Masajes",
-      "precio": 650,
-      "stock": 6
+      "nombre": "Kit Mantenimiento en Casa",
+      "categoria": "Retail",
+      "precio": 720,
+      "stock": 8
     }
   ]
 }

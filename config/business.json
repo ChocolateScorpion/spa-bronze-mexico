@@ -1,14 +1,28 @@
 {
-  "nombre": "Spa Serenity",
-  "giro": "spa",
+  "nombre": "Spa & Bronze México",
+  "giro": "spa-bronceado",
+  "slogan": "Tu bronceado, tu confianza.",
   "colores": {
-    "primario": "#7C5CBF",
-    "secundario": "#F0EBF8"
+    "primario": "#C9A84C",
+    "secundario": "#F5EDE0",
+    "acento": "#8B6914",
+    "fondo": "#FDFAF5",
+    "texto": "#1A1208"
   },
   "modulos": ["dashboard", "agenda", "cobros", "clientes", "reportes"],
   "vocabulario": {
-    "empleado": "terapeuta",
-    "servicio": "tratamiento",
-    "cliente": "clienta"
-  }
+    "empleado": "especialista",
+    "servicio": "sesión de bronceado",
+    "cliente": "clienta",
+    "cita": "sesión",
+    "producto": "fórmula"
+  },
+  "servicios": [
+    "Bronceado Brasileño",
+    "Bronceado Corporal",
+    "Tratamiento Facial",
+    "Bikini en Cinta Adhesiva",
+    "Paquete 3 sesiones",
+    "Paquete 6 sesiones"
+  ]
 }
