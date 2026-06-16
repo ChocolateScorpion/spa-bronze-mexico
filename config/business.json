@@ -1,0 +1,14 @@
+{
+  "nombre": "Spa Serenity",
+  "giro": "spa",
+  "colores": {
+    "primario": "#7C5CBF",
+    "secundario": "#F0EBF8"
+  },
+  "modulos": ["dashboard", "agenda", "cobros", "clientes", "reportes"],
+  "vocabulario": {
+    "empleado": "terapeuta",
+    "servicio": "tratamiento",
+    "cliente": "clienta"
+  }
+}
