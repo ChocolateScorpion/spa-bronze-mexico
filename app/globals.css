@@ -51,3 +51,8 @@ body {
 .delay-2 { animation-delay: 0.10s; }
 .delay-3 { animation-delay: 0.15s; }
 .delay-4 { animation-delay: 0.20s; }
+
+/* Hover state para filas de citas (server-safe) */
+.cita-row:hover {
+  background: color-mix(in srgb, var(--color-primary) 03%, transparent);
+}

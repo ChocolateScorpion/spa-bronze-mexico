@@ -247,10 +247,7 @@ export default function DashboardPage() {
             {citasHoy.map((cita) => (
               <li
                 key={cita.id}
-                className="group flex items-center justify-between gap-4 px-6 py-4 transition-colors"
-                style={{ cursor: "default" }}
-                onMouseEnter={(e) => (e.currentTarget.style.background = "color-mix(in srgb, var(--color-primary) 03%, transparent)")}
-                onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
+                className="cita-row flex items-center justify-between gap-4 px-6 py-4 transition-colors"
               >
                 <div className="flex items-center gap-4 min-w-0">
                   {/* Hora badge */}
