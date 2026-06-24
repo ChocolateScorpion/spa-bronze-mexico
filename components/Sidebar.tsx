@@ -70,23 +70,43 @@ export default function Sidebar() {
     <>
       {/* Sidebar de escritorio */}
       <aside
-        className="hidden md:flex md:w-64 md:shrink-0 md:flex-col md:h-screen md:sticky md:top-0"
-        style={{ background: "var(--color-fondo, #fdfaf5)", borderRight: "1px solid color-mix(in srgb, var(--color-primary) 20%, transparent)" }}
+        className="hidden md:flex md:w-60 md:shrink-0 md:flex-col md:h-screen md:sticky md:top-0"
+        style={{
+          background: "var(--color-fondo, #fdfaf5)",
+          borderRight: "1px solid color-mix(in srgb, var(--color-primary) 10%, transparent)",
+        }}
       >
-        {/* Encabezado */}
-        <div className="px-6 py-7" style={{ borderBottom: "1px solid color-mix(in srgb, var(--color-primary) 15%, transparent)" }}>
-          <p className="text-[15px] font-semibold tracking-wide" style={{ color: "var(--color-texto, #1a1208)" }}>
-            {business.nombre}
-          </p>
-          {business.slogan && (
-            <p className="mt-1 text-xs italic" style={{ color: "var(--color-primary)" }}>
-              {business.slogan}
-            </p>
-          )}
+        {/* Logo / Encabezado */}
+        <div className="px-5 py-6">
+          <div
+            className="flex items-center gap-3 px-3 py-3 rounded-xl"
+            style={{ background: "color-mix(in srgb, var(--color-primary) 08%, transparent)" }}
+          >
+            <div
+              className="w-8 h-8 rounded-lg flex items-center justify-center text-white font-black text-[11px] tracking-tight flex-shrink-0"
+              style={{ background: "linear-gradient(135deg, var(--color-primary) 0%, var(--color-acento, #8B6914) 100%)" }}
+            >
+              SB
+            </div>
+            <div className="min-w-0">
+              <p className="text-[13px] font-bold tracking-tight truncate" style={{ color: "var(--color-texto, #1a1208)" }}>
+                {business.nombre}
+              </p>
+              {business.slogan && (
+                <p className="text-[10px] truncate mt-0.5" style={{ color: "var(--color-primary)" }}>
+                  {business.slogan}
+                </p>
+              )}
+            </div>
+          </div>
         </div>
 
         {/* Navegación */}
-        <nav className="flex-1 px-3 py-4 space-y-0.5">
+        <nav className="flex-1 px-3 space-y-0.5 overflow-y-auto">
+          <p className="px-3 pb-2 text-[10px] font-semibold uppercase tracking-widest"
+            style={{ color: "color-mix(in srgb, var(--color-texto, #1a1208) 30%, transparent)" }}>
+            Módulos
+          </p>
           {activeModules.map((mod) => {
             const Icon = MODULE_ICONS[mod.key];
             const active = isActive(mod.href);
@@ -94,34 +114,34 @@ export default function Sidebar() {
               <Link
                 key={mod.key}
                 href={mod.href}
-                className="flex items-center gap-3 px-3 py-3 rounded-lg text-sm transition-colors"
+                className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm transition-all duration-200"
                 style={
                   active
                     ? {
-                        background: "var(--color-secondary)",
-                        color: "var(--color-primary)",
-                        fontWeight: 500,
-                        boxShadow: "inset 3px 0 0 var(--color-primary)",
+                        background: "var(--color-primary)",
+                        color: "#fff",
+                        fontWeight: 600,
+                        boxShadow: "0 2px 12px color-mix(in srgb, var(--color-primary) 35%, transparent)",
                       }
                     : {
-                        color: "color-mix(in srgb, var(--color-texto, #1a1208) 55%, transparent)",
+                        color: "color-mix(in srgb, var(--color-texto, #1a1208) 50%, transparent)",
                       }
                 }
                 onMouseEnter={(e) => {
                   if (!active) {
-                    (e.currentTarget as HTMLElement).style.background = "color-mix(in srgb, var(--color-secondary) 60%, transparent)";
+                    (e.currentTarget as HTMLElement).style.background = "color-mix(in srgb, var(--color-primary) 08%, transparent)";
                     (e.currentTarget as HTMLElement).style.color = "var(--color-texto, #1a1208)";
                   }
                 }}
                 onMouseLeave={(e) => {
                   if (!active) {
                     (e.currentTarget as HTMLElement).style.background = "";
-                    (e.currentTarget as HTMLElement).style.color = "color-mix(in srgb, var(--color-texto, #1a1208) 55%, transparent)";
+                    (e.currentTarget as HTMLElement).style.color = "color-mix(in srgb, var(--color-texto, #1a1208) 50%, transparent)";
                   }
                 }}
               >
-                <Icon className="h-[18px] w-[18px] shrink-0" />
-                <span className="tracking-wide">{mod.label}</span>
+                <Icon className="h-4 w-4 shrink-0" />
+                <span>{mod.label}</span>
               </Link>
             );
           })}
@@ -129,22 +149,32 @@ export default function Sidebar() {
 
         {/* Pie */}
         <div
-          className="px-6 py-4 text-[11px] tracking-wider uppercase"
-          style={{
-            borderTop: "1px solid color-mix(in srgb, var(--color-primary) 15%, transparent)",
-            color: "color-mix(in srgb, var(--color-primary) 50%, transparent)",
-          }}
+          className="px-5 py-4 flex items-center gap-2"
+          style={{ borderTop: "1px solid color-mix(in srgb, var(--color-primary) 10%, transparent)" }}
         >
-          Cero Stack Studio
+          <div
+            className="w-5 h-5 rounded-md flex items-center justify-center flex-shrink-0"
+            style={{ background: "color-mix(in srgb, var(--color-primary) 15%, transparent)" }}
+          >
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"
+              style={{ color: "var(--color-primary)" }}>
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            </svg>
+          </div>
+          <span className="text-[10px] font-semibold uppercase tracking-widest"
+            style={{ color: "color-mix(in srgb, var(--color-primary) 55%, transparent)" }}>
+            Cero Stack Studio
+          </span>
         </div>
       </aside>
 
-      {/* Barra de navegación móvil */}
+      {/* Barra móvil */}
       <nav
-        className="md:hidden sticky top-0 z-10 flex items-center gap-1 overflow-x-auto px-3 py-2"
+        className="md:hidden sticky top-0 z-10 flex items-center gap-1 overflow-x-auto px-3 py-2.5"
         style={{
           background: "var(--color-fondo, #fdfaf5)",
-          borderBottom: "1px solid color-mix(in srgb, var(--color-primary) 20%, transparent)",
+          borderBottom: "1px solid color-mix(in srgb, var(--color-primary) 12%, transparent)",
+          backdropFilter: "blur(8px)",
         }}
       >
         {activeModules.map((mod) => {
@@ -154,11 +184,16 @@ export default function Sidebar() {
             <Link
               key={mod.key}
               href={mod.href}
-              className="flex shrink-0 items-center gap-1.5 rounded-full px-3 py-1.5 text-sm transition-colors"
+              className="flex shrink-0 items-center gap-1.5 rounded-full px-3 py-1.5 text-sm transition-all"
               style={
                 active
-                  ? { background: "var(--color-primary)", color: "#fff", fontWeight: 500 }
-                  : { color: "color-mix(in srgb, var(--color-texto, #1a1208) 55%, transparent)", background: "transparent" }
+                  ? {
+                      background: "var(--color-primary)",
+                      color: "#fff",
+                      fontWeight: 600,
+                      boxShadow: "0 2px 8px color-mix(in srgb, var(--color-primary) 30%, transparent)",
+                    }
+                  : { color: "color-mix(in srgb, var(--color-texto, #1a1208) 50%, transparent)" }
               }
             >
               <Icon className="h-4 w-4 shrink-0" />
