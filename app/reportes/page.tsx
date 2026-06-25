@@ -96,7 +96,7 @@ export default function ReportesPage() {
       <div className="animate-fade-in delay-2">
         <MonthlyChart
           data={MONTHLY_DATA}
-          formatValue={formatMXN}
+
           title="Ingresos últimos 6 meses"
         />
       </div>
@@ -106,12 +106,12 @@ export default function ReportesPage() {
         <DonutChart
           title="Por método de pago"
           items={porMetodo}
-          formatValue={formatMXN}
+
         />
         <DonutChart
           title={`Por ${vocab.empleado}`}
           items={porTerapeuta}
-          formatValue={formatMXN}
+
         />
       </div>
 
@@ -155,7 +155,7 @@ export default function ReportesPage() {
         <DonutChart
           title={`Por ${vocab.servicio}`}
           items={porTratamiento}
-          formatValue={formatMXN}
+
         />
       </div>
     </div>

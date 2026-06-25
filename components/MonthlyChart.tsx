@@ -9,20 +9,19 @@ type MonthlyData = {
 
 type MonthlyChartProps = {
   data: MonthlyData[];
-  formatValue?: (v: number) => string;
+
   title?: string;
 };
 
 export default function MonthlyChart({
   data,
-  formatValue,
   title = "Evolución mensual",
 }: MonthlyChartProps) {
   const [mounted, setMounted] = useState(false);
   const [hovered, setHovered] = useState<number | null>(null);
   useEffect(() => { setMounted(true); }, []);
 
-  const fmt = formatValue ?? ((v: number) => "$" + v.toLocaleString("es-MX"));
+  const fmt = (v: number) => new Intl.NumberFormat("es-MX", { style: "currency", currency: "MXN", minimumFractionDigits: 0 }).format(v);
   const max = Math.max(...data.map((d) => d.ingresos), 1);
 
   const W = 480;

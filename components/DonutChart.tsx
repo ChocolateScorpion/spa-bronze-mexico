@@ -10,18 +10,18 @@ type DonutItem = {
 
 type DonutChartProps = {
   items: DonutItem[];
-  formatValue?: (v: number) => string;
+
   title: string;
 };
 
 const GOLD_PALETTE = ["#C9A84C", "#8B6914", "#E8C97A", "#6B4F10", "#DFB85C"];
 
-export default function DonutChart({ items, formatValue, title }: DonutChartProps) {
+export default function DonutChart({ items, title }: DonutChartProps) {
   const [mounted, setMounted] = useState(false);
   const [hovered, setHovered] = useState<number | null>(null);
   useEffect(() => { setMounted(true); }, []);
 
-  const fmt = formatValue ?? ((v: number) => String(v));
+  const fmt = (v: number) => new Intl.NumberFormat("es-MX", { style: "currency", currency: "MXN", minimumFractionDigits: 0 }).format(v);
   const total = items.reduce((s, i) => s + i.value, 0);
   if (total === 0) return null;
 
